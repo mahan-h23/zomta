@@ -43,7 +43,7 @@
 <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html">Zomta Metaverese</a></h1>
+        <h1 class="logo me-auto"><a href="index.html">Zomta Metaverse</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <a href="index.html" class="logo me-auto"><img src="{% static 'img/logo/Zomta Logo.png' %}" alt=""
                                                        class="img-fluid"></a>
@@ -169,7 +169,7 @@
     <!-- ======= Why Us Section ======= -->
     {% for i in contents %}
         {% if forloop.counter|divisibleby:2 %}
-            <section id="why-us" class="why-us section-bg">
+            <section id="why-us" class="why-us section-bg" style="background: #ffffff">
                 <div class="container-fluid" data-aos="fade-up">
 
                     <div class="row">
@@ -177,45 +177,14 @@
                         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
                             <div class="content">
-                                <p>
-                                    As the first major NFT hub built on Ethereum and Polygon, we're building the
-                                    definitive
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                </p>
+                                    {{ i.text_content|safe }}
                             </div>
 
 
                         </div>
 
                         <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                             style='background-image: url({% static 'assets/img/why-us.png' %});' data-aos="zoom-in"
+                             style='background-image: url({{ i.img_field.url }});' data-aos="zoom-in"
                              data-aos-delay="150">
                             &nbsp;
                         </div>
@@ -229,7 +198,7 @@
 
                     <div class="row">
                         <div class="col-lg-5 align-items-stretch order-2 order-lg-1 img"
-                             style='background-image: url({% static 'assets/img/why-us.png' %});' data-aos="zoom-in"
+                             style='background-image: url({{ i.img_field.url }});' data-aos="zoom-in"
                              data-aos-delay="150">
                             &nbsp;
                         </div>
@@ -238,36 +207,7 @@
 
                             <div class="content">
                                 <p>
-                                    As the first major NFT hub built on Ethereum and Polygon, we're building the
-                                    definitive
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
-                                    platform to create, discover, trade, and leverage any digital content on the
-                                    blockchain.
+                                    {{ i.text_content|safe}}
                                 </p>
                             </div>
 
