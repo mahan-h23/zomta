@@ -11,3 +11,6 @@ urlpatterns = [
                   path('', homepage_view, name='homepage')
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
                                                                                          document_root=settings.STATIC_ROOT)
+admin.site.site_header = "Zomta Admin"
+admin.site.site_title = "Zomta Admin Site"
+admin.site.index_title = "Zomta Panel"
